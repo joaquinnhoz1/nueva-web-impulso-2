@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Impulso Web — Páginas profesionales creadas con IA. Presencia digital premium para tu negocio en 72hs." />
+  <title>Impulso Web — Tu Presencia Digital con IA</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Impulso Web inicio">
+        <span class="logo-mark">IW</span>
+        <span class="logo-text">Impulso<strong>Web</strong></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#como-funciona">Proceso</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#precios">Precios</a></li>
+      </ul>
+
+      <a href="#contacto" class="btn btn-nav">
+        Hablemos
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+      <li><a href="#como-funciona" class="mobile-link">Proceso</a></li>
+      <li><a href="#resultados" class="mobile-link">Resultados</a></li>
+      <li><a href="#precios" class="mobile-link">Precios</a></li>
+      <li><a href="#contacto" class="mobile-link mobile-cta">Hablemos →</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero" aria-labelledby="hero-heading">
+    <!-- Parallax BG layers -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Potenciado por IA · Entrega en 72hs
+      </div>
+
+      <h1 class="hero-title reveal" id="hero-heading">
+        Tu web profesional,<br/>
+        <span class="text-gradient">lista en días,</span><br/>
+        no en meses.
+      </h1>
+
+      <p class="hero-subtitle reveal">
+        Creamos páginas de alta conversión usando ChatGPT y las mejores herramientas de IA. 
+        Diseño premium, copy persuasivo y resultados reales — sin el costo de una agencia tradicional.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#contacto" class="btn btn-primary">
+          Quiero mi web ahora
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#resultados" class="btn btn-ghost">
+          Ver ejemplos
+        </a>
+      </div>
+
+      <div class="hero-social-proof reveal">
+        <div class="avatars" aria-hidden="true">
+          <div class="avatar av1"></div>
+          <div class="avatar av2"></div>
+          <div class="avatar av3"></div>
+          <div class="avatar av4"></div>
+        </div>
+        <p><strong>+120 negocios</strong> ya tienen su presencia digital</p>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LOGOS / SOCIAL PROOF BAR
+  ============================================================ -->
+  <section class="logos-bar" aria-label="Tecnologías utilizadas">
+    <div class="container">
+      <p class="logos-label">Construido con las mejores herramientas</p>
+      <div class="logos-track">
+        <div class="logos-slide">
+          <span class="logo-item">ChatGPT</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Claude AI</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Midjourney</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Vercel</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Webflow</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Framer</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Figma</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Google Analytics</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <!-- Duplicate for loop -->
+          <span class="logo-item">ChatGPT</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Claude AI</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Midjourney</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Vercel</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Webflow</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Framer</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Figma</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+          <span class="logo-item">Google Analytics</span>
+          <span class="logo-sep" aria-hidden="true">·</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICIOS
+  ============================================================ -->
+  <section class="section servicios" id="servicios" aria-labelledby="servicios-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">¿Qué hacemos?</span>
+        <h2 class="section-title reveal" id="servicios-heading">
+          Soluciones digitales<br/><em>que convierten</em>
+        </h2>
+        <p class="section-desc reveal">
+          No solo hacemos páginas bonitas. Construimos activos digitales que trabajan 
+          para tu negocio las 24 horas.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal" data-delay="0">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <rect x="2" y="4" width="24" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M9 24h10M14 20v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M7 10l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Landing Pages de Alta Conversión</h3>
+          <p>Páginas diseñadas específicamente para transformar visitas en clientes. Copy generado con IA + diseño psicológicamente optimizado.</p>
+          <ul class="card-features" role="list">
+            <li>Estructura persuasiva validada</li>
+            <li>CTA estratégicos</li>
+            <li>Velocidad de carga &lt;2s</li>
+          </ul>
+          <a href="#contacto" class="card-link">Empezar →</a>
+        </article>
+
+        <article class="service-card service-card--featured reveal" data-delay="100">
+          <div class="card-badge">Más popular</div>
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 8v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M8 4l-2-2M20 4l2-2M8 24l-2 2M20 24l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Sitio Web Corporativo Completo</h3>
+          <p>Presencia digital integral con múltiples secciones, blog integrado, SEO técnico y panel de administración simple.</p>
+          <ul class="card-features" role="list">
+            <li>Hasta 8 secciones personalizadas</li>
+            <li>SEO on-page optimizado</li>
+            <li>Integración WhatsApp / formularios</li>
+          </ul>
+          <a href="#contacto" class="card-link">Empezar →</a>
+        </article>
+
+        <article class="service-card reveal" data-delay="200">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M6 22V12l8-8 8 8v10a1 1 0 01-1 1H7a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M11 23v-7h6v7" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>E-commerce & Tiendas Online</h3>
+          <p>Desde catálogos digitales hasta tiendas con pago integrado. Configuradas con IA para maximizar el ticket promedio.</p>
+          <ul class="card-features" role="list">
+            <li>Catálogo ilimitado de productos</li>
+            <li>Pasarela de pagos integrada</li>
+            <li>Panel de gestión de pedidos</li>
+          </ul>
+          <a href="#contacto" class="card-link">Empezar →</a>
+        </article>
+
+        <article class="service-card reveal" data-delay="300">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M4 20l6-6 4 4 4-5 6 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="8" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Rediseño & Optimización</h3>
+          <p>¿Tu web se ve anticuada? La rediseñamos desde cero con IA, mejorando velocidad, SEO y tasa de conversión.</p>
+          <ul class="card-features" role="list">
+            <li>Auditoría UX completa</li>
+            <li>Mejora de Core Web Vitals</li>
+            <li>A/B testing básico incluido</li>
+          </ul>
+          <a href="#contacto" class="card-link">Empezar →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COMO FUNCIONA
+  ============================================================ -->
+  <section class="section proceso" id="como-funciona" aria-labelledby="proceso-heading">
+    <div class="proceso-bg" aria-hidden="true">
+      <div class="proceso-orb"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">¿Cómo funciona?</span>
+        <h2 class="section-title reveal" id="proceso-heading">
+          De idea a web publicada<br/><em>en 4 pasos</em>
+        </h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal" data-delay="0">
+          <div class="step-number" aria-hidden="true">01</div>
+          <div class="step-content">
+            <h3>Briefing con IA</h3>
+            <p>Completás un cuestionario inteligente. Usamos IA para extraer la esencia de tu negocio, tu público objetivo y tus objetivos de conversión.</p>
+          </div>
+        </div>
+
+        <div class="step-connector" aria-hidden="true"></div>
+
+        <div class="step reveal" data-delay="150">
+          <div class="step-number" aria-hidden="true">02</div>
+          <div class="step-content">
+            <h3>Diseño & Copy IA</h3>
+            <p>Generamos el wireframe, la paleta de colores y el copywriting persuasivo usando ChatGPT + herramientas especializadas. Aprobás antes de construir.</p>
+          </div>
+        </div>
+
+        <div class="step-connector" aria-hidden="true"></div>
+
+        <div class="step reveal" data-delay="300">
+          <div class="step-number" aria-hidden="true">03</div>
+          <div class="step-content">
+            <h3>Desarrollo & Refinado</h3>
+            <p>Construimos la web, integramos analytics, formularios, WhatsApp y SEO técnico. Revisiones incluidas hasta que quedes 100% conforme.</p>
+          </div>
+        </div>
+
+        <div class="step-connector" aria-hidden="true"></div>
+
+        <div class="step reveal" data-delay="450">
+          <div class="step-number" aria-hidden="true">04</div>
+          <div class="step-content">
+            <h3>Lanzamiento & Soporte</h3>
+            <p>Publicamos en tu dominio, configuramos el hosting y te entregamos acceso completo. Soporte 30 días post-lanzamiento incluido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESULTADOS / TESTIMONIOS
+  ============================================================ -->
+  <section class="section resultados" id="resultados" aria-labelledby="resultados-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Resultados reales</span>
+        <h2 class="section-title reveal" id="resultados-heading">
+          Lo que dicen<br/><em>nuestros clientes</em>
+        </h2>
+      </div>
+
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="120">0</span>
+          <span class="stat-suffix">+</span>
+          <p>proyectos entregados</p>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="72">0</span>
+          <span class="stat-suffix">hs</span>
+          <p>tiempo promedio de entrega</p>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-suffix">%</span>
+          <p>clientes satisfechos</p>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-suffix">x</span>
+          <p>aumento promedio en consultas</p>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <blockquote class="testimonial reveal" data-delay="0">
+          <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"En 3 días tenía una web que parece de empresa internacional. Las consultas por WhatsApp se triplicaron el primer mes. Increíble relación precio-resultado."</p>
+          <footer>
+            <div class="testimonial-avatar" aria-hidden="true">ML</div>
+            <div>
+              <cite>María L.</cite>
+              <span>Consultora de Marketing, Buenos Aires</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial reveal" data-delay="150">
+          <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"Tenía miedo de que una web con IA se viera genérica. Para nada. Capturaron la identidad de mi estudio jurídico a la perfección. Profesionalismo total."</p>
+          <footer>
+            <div class="testimonial-avatar" aria-hidden="true">RG</div>
+            <div>
+              <cite>Roberto G.</cite>
+              <span>Abogado Societario, Córdoba</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial reveal" data-delay="300">
+          <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"Nuestra tienda online pasó de hacer 0 ventas en internet a vender todos los días. El SEO que configuraron hizo toda la diferencia. Los recomiendo sin dudarlo."</p>
+          <footer>
+            <div class="testimonial-avatar" aria-hidden="true">AP</div>
+            <div>
+              <cite>Ana P.</cite>
+              <span>Emprendedora, Rosario</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRECIOS
+  ============================================================ -->
+  <section class="section precios" id="precios" aria-labelledby="precios-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Inversión</span>
+        <h2 class="section-title reveal" id="precios-heading">
+          Planes claros,<br/><em>sin sorpresas</em>
+        </h2>
+        <p class="section-desc reveal">Todo incluido. Sin costos ocultos. Precios en USD.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card reveal" data-delay="0">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="pricing-price">
+              <span class="price-currency">USD</span>
+              <span class="price-amount">299</span>
+            </div>
+            <p>Para emprendedores que quieren arrancar rápido</p>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li>Landing page de 1 página</li>
+            <li>Copy generado con IA</li>
+            <li>Diseño responsive</li>
+            <li>Formulario de contacto</li>
+            <li>Google Analytics integrado</li>
+            <li>SEO básico</li>
+            <li>Entrega en 72hs</li>
+          </ul>
+          <a href="#contacto" class="btn btn-outline">Empezar →</a>
+        </article>
+
+        <article class="pricing-card pricing-card--featured reveal" data-delay="150">
+          <div class="pricing-badge">Recomendado</div>
+          <div class="pricing-header">
+            <h3>Pro</h3>
+            <div class="pricing-price">
+              <span class="price-currency">USD</span>
+              <span class="price-amount">599</span>
+            </div>
+            <p>Para negocios que quieren destacar de la competencia</p>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li>Sitio de hasta 6 secciones</li>
+            <li>Copy + imágenes con IA</li>
+            <li>Diseño premium personalizado</li>
+            <li>Integraciones WhatsApp + redes</li>
+            <li>SEO on-page avanzado</li>
+            <li>Blog / noticias</li>
+            <li>Soporte 30 días</li>
+            <li>Entrega en 5 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary">Empezar →</a>
+        </article>
+
+        <article class="pricing-card reveal" data-delay="300">
+          <div class="pricing-header">
+            <h3>Business</h3>
+            <div class="pricing-price">
+              <span class="price-currency">USD</span>
+              <span class="price-amount">999</span>
+            </div>
+            <p>Para empresas que necesitan solución completa</p>
+          </div>
+          <ul class="pricing-features" role="list">
+            <li>Sitio multi-sección completo</li>
+            <li>E-commerce integrado</li>
+            <li>Panel de administración</li>
+            <li>Pasarela de pagos</li>
+            <li>SEO técnico avanzado</li>
+            <li>Soporte 60 días</li>
+            <li>Mantenimiento mensual</li>
+            <li>A/B testing configurado</li>
+          </ul>
+          <a href="#contacto" class="btn btn-outline">Consultar →</a>
+        </article>
+      </div>
+
+      <p class="pricing-note reveal">¿Tenés un proyecto especial? <a href="#contacto">Hablemos y armamos algo a medida.</a></p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA PARALLAX
+  ============================================================ -->
+  <section class="cta-parallax" aria-labelledby="cta-heading">
+    <div class="cta-parallax-bg" data-parallax="0.4" aria-hidden="true">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-glass reveal">
+        <h2 id="cta-heading">Tu negocio merece una web<br/><span class="text-gradient">que trabaje por vos.</span></h2>
+        <p>Más de 120 negocios argentinos ya dan una primera impresión profesional. Sumate hoy.</p>
+        <a href="#contacto" class="btn btn-primary btn-large">
+          Quiero mi web gratis de consulta
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <p class="cta-note">Sin compromiso · Respuesta en menos de 24hs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="section faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">FAQ</span>
+        <h2 class="section-title reveal" id="faq-heading">
+          Preguntas<br/><em>frecuentes</em>
+        </h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal" data-delay="0">
+          <summary>¿Qué tan rápido puedo tener mi web?</summary>
+          <p>El plan Starter se entrega en 72 horas. El Pro en 5 días hábiles y el Business en 10 días. Los tiempos corren desde que aprobás el diseño inicial.</p>
+        </details>
+        <details class="faq-item reveal" data-delay="100">
+          <summary>¿La web se ve genérica porque usa IA?</summary>
+          <p>No. La IA es nuestra herramienta, no el resultado. Usamos ChatGPT para accelerar el proceso, pero cada web está personalizada según tu marca, industria y público. El resultado final es único.</p>
+        </details>
+        <details class="faq-item reveal" data-delay="200">
+          <summary>¿Incluye el dominio y hosting?</summary>
+          <p>El desarrollo está incluido en el precio. El dominio y hosting tienen costo aparte (promedio USD 15-30/año). Podés usar tu proveedor actual o te ayudamos a contratar uno.</p>
+        </details>
+        <details class="faq-item reveal" data-delay="300">
+          <summary>¿Puedo editar la web yo mismo después?</summary>
+          <p>Sí. Entregamos la web con un sistema de gestión de contenido (CMS) simple o con acceso directo al código, según prefieras. También ofrecemos mantenimiento mensual si preferís delegar todo.</p>
+        </details>
+        <details class="faq-item reveal" data-delay="400">
+          <summary>¿Hacen webs para cualquier tipo de negocio?</summary>
+          <p>Sí. Hemos trabajado con abogados, coaches, restaurantes, e-commerces, estudios de diseño, consultoras, clínicas y más. La IA nos permite adaptarnos rápido a cualquier industria.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="section contacto" id="contacto" aria-labelledby="contacto-heading">
+    <div class="container">
+      <div class="contacto-inner">
+        <div class="contacto-info reveal">
+          <span class="section-label">Contacto</span>
+          <h2 id="contacto-heading">Empezá hoy.<br/><span class="text-gradient">Hablemos.</span></h2>
+          <p>Contanos de tu negocio y en menos de 24hs te respondemos con una propuesta personalizada. Sin costo, sin compromiso.</p>
+
+          <div class="contact-items">
+            <a href="https://wa.me/5491100000000" class="contact-item" target="_blank" rel="noopener">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M17.5 3C15.7 1.2 13.4.2 11 .2 6.3.2 2.4 4 2.4 8.8c0 1.5.4 3 1.1 4.3L2 18l5.1-1.4c1.3.7 2.7 1.1 4.2 1.1h.1c4.7 0 8.6-3.9 8.6-8.6 0-2.3-1-4.5-2.5-6.1zM11 16.3c-1.3 0-2.7-.4-3.8-1l-.3-.2-3 .8.8-2.9-.2-.3c-.7-1.1-1-2.4-1-3.7 0-3.9 3.2-7 7-7 1.9 0 3.6.7 4.9 2 1.3 1.3 2 3.1 2 4.9.2 3.9-3 7.1-6.9 7.1zm3.8-5.3c-.2-.1-1.2-.6-1.4-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.8.9-.1.2-.3.2-.5.1-.7-.3-1.4-.7-1.9-1.3-.5-.5-.9-1.1-1-1.8 0-.2 0-.4.2-.5l.3-.4c.1-.1.1-.3.2-.4 0-.1 0-.3-.1-.4-.1-.1-.5-1.2-.7-1.7-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.5.5-.9 1.1-.9 1.9 0 .9.7 1.7 1.2 2.3.8 1 1.8 1.8 3 2.3.4.2.8.3 1.2.4.5.1.9 0 1.3-.2.4-.2.9-.8 1-1.5l.1-.4c-.1-.1-.3-.2-.5-.3z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+54 9 11 0000-0000</span>
+              </div>
+            </a>
+
+            <a href="mailto:hola@impulsoweb.com.ar" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M2 4h16v12H2zM2 4l8 7 8-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>hola@impulsoweb.com.ar</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate aria-label="Formulario de contacto">
+          <div class="form-group">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="negocio">¿A qué se dedica tu negocio?</label>
+            <input type="text" id="negocio" name="negocio" placeholder="Ej: Consultoría de RRHH" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">¿Qué necesitás?</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos un poco sobre tu proyecto..." rows="4" required></textarea>
+          </div>
+          <div class="form-group form-select-group">
+            <label for="plan">Plan de interés</label>
+            <select id="plan" name="plan">
+              <option value="">Seleccionar plan...</option>
+              <option value="starter">Starter — USD 299</option>
+              <option value="pro">Pro — USD 599</option>
+              <option value="business">Business — USD 999</option>
+              <option value="custom">Proyecto a medida</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Enviar consulta</span>
+            <span class="btn-loading" aria-hidden="true">Enviando...</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="form-success" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Impulso Web inicio">
+            <span class="logo-mark">IW</span>
+            <span class="logo-text">Impulso<strong>Web</strong></span>
+          </a>
+          <p>Presencia digital premium potenciada por inteligencia artificial. Para negocios que quieren crecer.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul role="list">
+              <li><a href="#servicios">Landing Pages</a></li>
+              <li><a href="#servicios">Sitios Corporativos</a></li>
+              <li><a href="#servicios">E-commerce</a></li>
+              <li><a href="#servicios">Rediseño</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul role="list">
+              <li><a href="#como-funciona">Proceso</a></li>
+              <li><a href="#resultados">Resultados</a></li>
+              <li><a href="#precios">Precios</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul role="list">
+              <li><a href="https://wa.me/5491100000000" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="mailto:hola@impulsoweb.com.ar">Email</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Impulso Web. Todos los derechos reservados.</p>
+        <p>Hecho con IA &amp; ❤️ en Argentina 🇦🇷</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+      <path d="M9 14V4M4 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
